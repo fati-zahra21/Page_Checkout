@@ -9,10 +9,12 @@
       <link href="css/bootstrap.css" rel="stylesheet">
         <!-- custom CSS here -->
     <link href="css/style.css" rel="stylesheet" />
-    
+    <!-- bootstrap.js, modal.js and popper.js -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
 </head>
 <body>
-  
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-9">
@@ -41,8 +43,30 @@
                                 <h3><a href="#">Airpods Appele </a></h3>
                                 <p>Price : <strong>$ 60</strong>  </p>
                                 <p>AirPods Max are designed for an uncompromising fit that creates — fully immersing you in every sound.                                </p>
-                                <p><a href="#" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" role="button">See Details</a></p>
+                                <p>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                        Add To Cart
+                                      </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                 <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                             <div class="modal-body">
+                                    Hello
+                             </div>
+                            <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                             <button type="button" class="btn btn-primary">Save </button>
                             </div>
+                         </div>
+                       </div>
+                    </div>                                 
+                                </p>                            </div>
                         </div>
                     </div>
                     <!-- /.col -->
@@ -53,8 +77,30 @@
                                 <h3><a href="#">Lipstick Rihanna </a></h3>
                                 <p>Price : <strong>$ 9</strong>  </p>
                                 <p>An ultra slim lipstick with a longwearing, petal-soft matte finish.  </p>
-                                <p><a href="#" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" role="button">See Details</a></p>
+                                <p>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                        Add To Cart
+                                      </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                 <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                             <div class="modal-body">
+                                    Hello
+                             </div>
+                            <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                             <button type="button" class="btn btn-primary">Save </button>
                             </div>
+                         </div>
+                       </div>
+                    </div>                                 
+                                </p>                            </div>
                         </div>
                     </div>
                     <!-- /.col -->
@@ -65,7 +111,30 @@
                                 <h3><a href="#">Samsung Galaxy </a></h3>
                                 <p>Price : <strong>$ 800</strong>  </p>
                                 <p>A good looking, comfortable, capable and seemingly powerful Android phone.</p>
-                                <p><a href="#" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" role="button">See Details</a></p>
+                                <p>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                        Add To Cart
+                                      </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                 <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                             <div class="modal-body">
+                                    Hello
+                             </div>
+                            <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                             <button type="button" class="btn btn-primary">Save </button>
+                            </div>
+                         </div>
+                       </div>
+                    </div>                                 
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -78,7 +147,7 @@
                         <div class="col cart">
                             <div class="title">
                                 <div class="row">
-                                    <div class="col"><h4 style="margin: 0;"><b>Shopping Cart</b></h4></div>
+                                    <div class="col"><h4><b>Shopping Cart</b></h4></div>
                                     <div class="col align-self-center text-right text-muted">3 items</div>
                                 </div>
                             </div>    
@@ -90,12 +159,12 @@
                                         <div class="row">Airpods Appele</div>
                                     </div>
                                     <div class="col">
-                                        <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                                        <a href="#" class="border">-</a><a href="#">1</a><a href="#" class="border">+</a>
                                     </div>
                                     <div class="col"> 
                                         <input type="text" placeholder="&euro; 60" class="form-control">
                                 </div>
-                                <div class="col" style="width: auto; "> 
+                                <div class="col last-col" > 
                                     <span class="close">&#10005;</span>
                                 </div>                                
                             </div>
@@ -108,12 +177,12 @@
                                         <div class="row">Lipstick Rihanna</div>
                                     </div>
                                     <div class="col">
-                                        <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                                        <a href="#" class="border">-</a><a href="#">1</a><a href="#" class="border">+</a>
                                     </div>
                                     <div class="col"> 
                                         <input type="text" placeholder="&euro; 9" class="form-control">
                                 </div>
-                                <div class="col" style="width: auto; "> 
+                                <div class="col last-col" > 
                                     <span class="close">&#10005;</span>
                                 </div>     
                             </div>
@@ -126,12 +195,12 @@
                                         <div class="row">Samsung Galaxy</div>
                                     </div>
                                     <div class="col">
-                                        <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                                        <a href="#" class="border">-</a><a href="#" >1</a><a href="#" class="border">+</a>
                                     </div>
                                     <div class="col"> 
                                         <input type="text" placeholder="&euro; 800" class="form-control">
                                 </div>
-                                <div class="col" style="width: auto; "> 
+                                <div class="col last-col"> 
                                     <span class="close">&#10005;</span>
                                 </div>     
 
@@ -139,7 +208,10 @@
                             </div>
                             <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
                                 <div class="col">TOTAL PRICE</div>
-                                <div class="col text-right">&euro; 869.00</div>
+                                <div class="col text-right">
+                                  <span style="    font-size: 1.5rem;
+                                  font-weight: 600;">&euro; 869.00 </span>  
+                                </div>
                             </div>
                             <a href="#" class="btn btn-success btn-checkout" role="button">CHECKOUT</a>
                         </div>

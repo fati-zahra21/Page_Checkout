@@ -1,6 +1,6 @@
 body {
     font-family:'Open Sans', sans-serif;
-font-size:14px;
+font-size:16px;
 }
 
 
@@ -16,10 +16,29 @@ font-family:'Open Sans', sans-serif;
 float:right;
 padding-right:20px;
 }
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
 a:hover {
 text-decoration:none;
 }
-
+.container-fluid{
+    margin: 10px;
+}
+.col-lg-3 
+{
+    /* height: 100vh; */
+    background: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    border-left: none;
+}
+.col-lg-9 
+{
+    /* height: 100vh; */
+    border: 1px solid #e7e7e7;
+    padding: 5px;
+}
 /*=======================================
 NAVBAR ADJUSTMENTS
 ==================================================*/
@@ -34,7 +53,7 @@ border-radius: 0px;
 
 }
 .card{
-    margin: 30px auto;
+    margin: 20px auto;
     max-width: 950px;
     width: 90%;
     border-radius: 1rem;
@@ -46,7 +65,7 @@ border-radius: 0px;
     }
 }
 .cart{
-    background-color: #fff;
+    background-color: transparent;
     padding: 4vh 5vh;
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -57,6 +76,11 @@ border-radius: 0px;
         border-bottom-left-radius: unset;
         border-top-right-radius: 1rem;
     }
+}
+.thumbnail {
+    height: 455px;
+    line-height: 1.308571;
+
 }
 .summary{
     background-color: #ddd;
@@ -71,6 +95,7 @@ border-radius: 0px;
     border-bottom-left-radius: 1rem;
     }
 }
+
 .summary .col-2{
     padding: 0;
 }
@@ -79,7 +104,7 @@ border-radius: 0px;
     padding: 0;
 }
 .title b{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 .main{
     margin: 0;
@@ -94,7 +119,7 @@ border-radius: 0px;
     width: 100%;
 }
 a{
-    padding: 0 1vh;
+    padding: 0 1.3vh;
 }
 .close{
     margin:10px auto;
@@ -124,13 +149,10 @@ form{
     border: transparent;
     padding: 6px 12px;
     background: #5cb85b;
-    color: white;
+    color: white !important;
 }
 
-input{
-    padding: 4px 6px;
 
-}
 /*
 input:focus::-webkit-input-placeholder
 {
@@ -139,6 +161,8 @@ input:focus::-webkit-input-placeholder
 .border{
     border: 1px solid #ccc;
 border-radius: 3px;
+padding: 3px 8px;
+
 }
 
 a{
@@ -148,9 +172,17 @@ a:hover{
     color: black;
     text-decoration: none;
 }
- #code{
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253) , rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: center;
+.last-col{
+    width: auto;
+}
+@media(max-width:1199px){
+    .card{
+        margin: 10px auto;
+    }
+    .img-fluid {
+        width: 8rem;
+    }
+    .last-col{
+        width: 100%;
+    }
 }
