@@ -1,0 +1,156 @@
+body {
+    font-family:'Open Sans', sans-serif;
+font-size:14px;
+}
+
+
+.text-center {
+text-align:center;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+font-family:'Open Sans', sans-serif;
+}
+.alg-right-pad {
+float:right;
+padding-right:20px;
+}
+a:hover {
+text-decoration:none;
+}
+
+/*=======================================
+NAVBAR ADJUSTMENTS
+==================================================*/
+
+.navbar {
+border-radius: 0px; 
+}
+
+
+.title{
+    margin-bottom: 5vh;
+
+}
+.card{
+    margin: 30px auto;
+    max-width: 950px;
+    width: 90%;
+    border-radius: 1rem;
+    border: transparent;
+}
+@media(max-width:767px){
+    .card{
+        margin: 3vh auto;
+    }
+}
+.cart{
+    background-color: #fff;
+    padding: 4vh 5vh;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+@media(max-width:767px){
+    .cart{
+        padding: 4vh;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 1rem;
+    }
+}
+.summary{
+    background-color: #ddd;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 4vh;
+    color: rgb(65, 65, 65);
+}
+@media(max-width:767px){
+    .summary{
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 1rem;
+    }
+}
+.summary .col-2{
+    padding: 0;
+}
+.summary .col-10
+{
+    padding: 0;
+}
+.title b{
+    font-size: 1.5rem;
+}
+.main{
+    margin: 0;
+    padding: 2vh 0;
+    width: 100%;
+    display: flex;
+    align-items: end;
+
+}
+.col-2, .col{
+    padding: 0 1vh;
+    width: 100%;
+}
+a{
+    padding: 0 1vh;
+}
+.close{
+    margin:10px auto;
+    font-size: 1.5rem;
+}
+.img-fluid {
+    width: 4rem;
+}
+.back-to-shop{
+    margin-top: 4.5rem;
+}
+h5{
+    margin-top: 4vh;
+}
+hr{
+    margin-top: 1.25rem;
+}
+form{
+    padding: 2vh 0;
+}
+
+.btn-checkout{
+    margin: auto;
+    max-width: 950px;
+    width: 100%;
+    border-radius: 1rem;
+    border: transparent;
+    padding: 6px 12px;
+    background: #5cb85b;
+    color: white;
+}
+
+input{
+    padding: 4px 6px;
+
+}
+/*
+input:focus::-webkit-input-placeholder
+{
+      color:transparent;
+} */
+.border{
+    border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+a{
+    color: black; 
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+ #code{
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253) , rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+}
